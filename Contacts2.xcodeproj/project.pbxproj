@@ -8,20 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		7EC2EA8320D73D4900DF5946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2EA8220D73D4900DF5946 /* AppDelegate.swift */; };
-		7EC2EA8520D73D4900DF5946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC2EA8420D73D4900DF5946 /* ViewController.swift */; };
 		7EC2EA8820D73D4900DF5946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC2EA8620D73D4900DF5946 /* Main.storyboard */; };
 		7EC2EA8A20D73D4A00DF5946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC2EA8920D73D4A00DF5946 /* Assets.xcassets */; };
 		7EC2EA8D20D73D4A00DF5946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC2EA8B20D73D4A00DF5946 /* LaunchScreen.storyboard */; };
+		7EC2EA9720D73D5800DF5946 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC2EA9620D73D5800DF5946 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7EC2EA7F20D73D4900DF5946 /* Contacts2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC2EA8220D73D4900DF5946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EC2EA8420D73D4900DF5946 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EC2EA8720D73D4900DF5946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EC2EA8920D73D4A00DF5946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EC2EA8C20D73D4A00DF5946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EC2EA8E20D73D4A00DF5946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EC2EA9420D73D5500DF5946 /* Contacts2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Contacts2.entitlements; sourceTree = "<group>"; };
+		7EC2EA9620D73D5800DF5946 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC2EA9720D73D5800DF5946 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +42,7 @@
 			children = (
 				7EC2EA8120D73D4900DF5946 /* Contacts2 */,
 				7EC2EA8020D73D4900DF5946 /* Products */,
+				7EC2EA9520D73D5800DF5946 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +57,70 @@
 		7EC2EA8120D73D4900DF5946 /* Contacts2 */ = {
 			isa = PBXGroup;
 			children = (
-				7EC2EA8220D73D4900DF5946 /* AppDelegate.swift */,
-				7EC2EA8420D73D4900DF5946 /* ViewController.swift */,
-				7EC2EA8620D73D4900DF5946 /* Main.storyboard */,
-				7EC2EA8920D73D4A00DF5946 /* Assets.xcassets */,
-				7EC2EA8B20D73D4A00DF5946 /* LaunchScreen.storyboard */,
-				7EC2EA8E20D73D4A00DF5946 /* Info.plist */,
+				7EC2EA9D20D73DA100DF5946 /* Model */,
+				7EC2EA9C20D73D9D00DF5946 /* ModelController */,
+				7EC2EA9B20D73D9A00DF5946 /* ViewController */,
+				7EC2EA9A20D73D9600DF5946 /* View */,
+				7EC2EA9920D73D8800DF5946 /* Resources */,
+				7EC2EA9420D73D5500DF5946 /* Contacts2.entitlements */,
 			);
 			path = Contacts2;
+			sourceTree = "<group>";
+		};
+		7EC2EA9520D73D5800DF5946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EC2EA9620D73D5800DF5946 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EC2EA9820D73D7A00DF5946 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7EC2EA8620D73D4900DF5946 /* Main.storyboard */,
+				7EC2EA8B20D73D4A00DF5946 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7EC2EA9920D73D8800DF5946 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7EC2EA9820D73D7A00DF5946 /* Storyboard */,
+				7EC2EA8220D73D4900DF5946 /* AppDelegate.swift */,
+				7EC2EA8920D73D4A00DF5946 /* Assets.xcassets */,
+				7EC2EA8E20D73D4A00DF5946 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7EC2EA9A20D73D9600DF5946 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7EC2EA9B20D73D9A00DF5946 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7EC2EA9C20D73D9D00DF5946 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		7EC2EA9D20D73DA100DF5946 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +155,14 @@
 				TargetAttributes = {
 					7EC2EA7E20D73D4900DF5946 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EC2EA8520D73D4900DF5946 /* ViewController.swift in Sources */,
 				7EC2EA8320D73D4900DF5946 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Contacts2/Contacts2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DBM67E5D74;
-				INFOPLIST_FILE = Contacts2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Contacts2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,9 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Contacts2/Contacts2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DBM67E5D74;
-				INFOPLIST_FILE = Contacts2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Contacts2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
